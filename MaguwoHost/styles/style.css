@@ -236,6 +236,7 @@ h1{
 	background-color: #ffe13e;
 	border-left: 1px solid #fff;
 	padding: 0 18px;
+	border-radius: 0px;
 }
 
 
@@ -247,7 +248,6 @@ h1{
 	font-size: 14px;
 	font-weight: bold;
 	background-color: #ffe13e;
-	padding: 0 18px;
 	border: 1px solid #fff;
 	border-radius: 0;
 }
@@ -263,10 +263,48 @@ h1{
 	border: none;
 }
 
-
-
-
-
-
-
 /*end screen1*/
+
+/*start screen2*/
+
+
+.screen-services{
+	position: absolute;
+	width: 100%;
+	height: 792px;
+}
+
+.screen-services .container{
+	width: 1170px;
+	height: 657px;
+	margin: 0 auto;
+}
+
+.screen-services .blue-block{
+	position: absolute;
+ 	background: #202242;
+ 	top: 0;
+ 	bottom: 0;
+    right: 50%;
+    left: 0;
+}
+.screen-services .yellow-block{
+	position: absolute;
+	background: #ffe13e;
+	top: 0;
+ 	bottom: 0;
+    right: 0;
+    left: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*end screen2*/
