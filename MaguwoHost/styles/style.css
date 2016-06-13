@@ -1,0 +1,272 @@
+*{
+	box-sizing:border-box;
+}
+
+@font-face {
+   font-family: 'Rockwell';
+   src: url(../fonts/rockwell.ttf);
+  }
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	color:#adadad;
+	margin: 147px 0 0 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Raleway', sans-serif;
+}
+
+.header{
+	z-index: 999;
+	width:100%;
+	background: #fff; 
+	position: fixed;
+	height: 147px;
+	top:0;
+	left:0;
+}
+
+.header .container{
+	width:1170px;
+	margin: 0 auto;
+	height: 147px;
+	/*background: yellow;*/
+}	
+
+.clearfix:after,
+.chatnumber:after,
+.container:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.btn{	
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 14px;
+	padding: 15px 30px;
+}
+
+.btn.btn-default{
+	background:#ffe13e;
+	color:#202242;
+	transition: all .1s ease;
+}
+
+.btn.btn-default:hover{
+	background: none;
+	outline: 1px;
+	outline-style: solid;
+	outline-color: #202242;
+	color:#202242;
+}
+
+/*start header*/
+.label{
+	float: left;
+	padding: 35px 0;
+	
+}
+
+.header .logo{
+	background: url(../images/logo.png) no-repeat center;
+	float: left;
+	width:30px;
+	padding: 40px 0;
+	
+}
+
+.header .logotext{
+	font-family: 'Rockwell';
+	font-size: 30px;
+	color: #202242;
+	padding: 24px 0 24px 16px;
+	float: left;
+}
+
+.header .nav{
+	float: left;
+	list-style: none;
+	padding: 64px 0px 64px 84px;
+	margin: 0;
+
+}
+
+.header .nav li{
+	float: left;
+	padding: 0 18px;
+}
+
+.header .nav li a{
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #202242
+}
+
+.header .nav li:last-child{
+	padding: 0 0 0 23px;
+}
+
+.header .nav li a:hover{
+	color: #ffe13e;
+
+}
+
+.adress{
+	float: right;
+	padding: 34px 0 35px 48px;
+	margin: 0;
+	border-left: 1px solid #ebebeb;
+}
+
+p {
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px 0;
+	margin: 0;
+	color: #202242
+}
+
+.chatnumber{
+	float: right;
+	padding: 5px 5px 5px 0;
+}
+
+.header .btn{
+	display: inline-block;
+	margin: 0 20px 0 0;
+	float:left;
+
+}
+
+.tel{
+	font-family: 'Lato', sans-serif;
+	float: right;
+	font-size: 24px;
+	padding: 7px 0 7px 20px;
+	margin: 0;
+	border-left: 1px solid #babbc4;
+	color: #202242
+
+}
+/*end header*/
+
+/*start screen1*/
+
+.screen-splash{
+	position: relative;
+	background: url(../images/block1-bckgrnd.png) no-repeat;
+	background-size: cover;
+	height: 792px;
+}
+
+
+.screen-splash .container{
+	min-height: 600px;
+    max-height: 800px;
+    top: 150px;
+    position: relative;
+    text-align: center;
+}
+
+h1{
+	font-family: 'Rockwell';
+	font-size: 48px;
+	color: #fff;
+	margin: 0;
+}
+
+.screen-splash .container p{
+	font-family: 'Raleway';
+	font-size: 30px;
+	padding: 43px 0;
+	font-weight: normal;
+	color: #fff;
+	margin: 0;
+}
+
+.screen-splash .container .shape{
+	display: block;
+    background: url("../images/block1_shape.png") no-repeat;
+    color: #fff;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+.check-domain{
+	display: inline-block;
+	text-align: center;
+	margin: 80px 0 0 0;
+	border: 15px solid rgba(255,255,255,.5);
+}
+.container .check-domain form{
+	display: block;
+}
+
+.container .check-domain input{
+	border: none;
+	height: 55px;
+}
+
+.container .check-domain form #domain-name{
+	float: left;
+	margin: 0;
+	font-family: 'Raleway';
+	font-size: 18px;
+	font-weight: normal;
+	padding: 15px 60px 15px 15px;
+}
+
+
+
+.container .check-domain form #check_availability{
+	float: right;
+	margin: 0;
+	font-family: 'Raleway';
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #ffe13e;
+	border-left: 1px solid #fff;
+	padding: 0 18px;
+}
+
+
+.container .check-domain form #check_availability:hover{
+	float: right;
+	margin: 0;
+	font-family: 'Raleway';
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #ffe13e;
+	outline: 1px solid #fff;
+	padding: 0 18px;
+	border: 1px solid #fff;
+}
+
+.container .check-domain form .select-domain-name{
+	float: left;
+	margin: 0;
+	font-family: 'Raleway';
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #ffe13e;
+	padding: 16px 22px;
+	border: none;
+}
+
+
+
+
+
+
+
+/*end screen1*/
