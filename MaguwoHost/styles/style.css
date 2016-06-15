@@ -23,7 +23,6 @@ h1,h2,h3,h4,h5,h6{
 	width:100%;
 	background: #fff; 
 	position: fixed;
-	height: 147px;
 	top:0;
 	left:0;
 }
@@ -68,15 +67,16 @@ h1,h2,h3,h4,h5,h6{
 /*start header*/
 .label{
 	float: left;
-	padding: 35px 0;
+	margin: 50px 0 57px 0;
 	
 }
 
 .header .logo{
 	background: url(../images/logo.png) no-repeat center;
 	float: left;
-	width:30px;
-	padding: 40px 0;
+	width: 30px;
+	height: 40px;
+	position: center;
 	
 }
 
@@ -84,21 +84,21 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'Rockwell';
 	font-size: 30px;
 	color: #202242;
-	padding: 24px 0 24px 16px;
+	padding: 5px 0 0 5px;
 	float: left;
 }
 
 .header .nav{
 	float: left;
 	list-style: none;
-	padding: 64px 0px 64px 84px;
+	padding: 64px 0px 64px 64px;
 	margin: 0;
 
 }
 
 .header .nav li{
 	float: left;
-	padding: 0 18px;
+	padding: 0 0 0 36px;
 }
 
 .header .nav li a{
@@ -129,14 +129,13 @@ p {
 	font-size: 12px;
 	font-weight: bold;
 	text-decoration: none;
-	padding: 5px 0;
 	margin: 0;
 	color: #202242
 }
 
 .chatnumber{
+	margin: 20px 0 0 0;
 	float: right;
-	padding: 5px 5px 5px 0;
 }
 
 .header .btn{
@@ -153,28 +152,39 @@ p {
 	padding: 7px 0 7px 20px;
 	margin: 0;
 	border-left: 1px solid #babbc4;
-	color: #202242
+	color: #202242;
 
 }
 /*end header*/
 
 /*start screen1*/
 
-.screen-splash{
-	position: relative;
+.screen__splash{
+	width: 100%;
 	background: url(../images/block1-bckgrnd.png) no-repeat;
 	background-size: cover;
-	height: 792px;
+    position: relative;
+    height: 100vh;
+    min-height: 940px;
 }
 
 
-.screen-splash .container{
-	min-height: 600px;
-    max-height: 800px;
-    top: 150px;
+
+.screen__splash .container {
     position: relative;
     text-align: center;
+    margin: 0 auto;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
 }
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
 
 h1{
 	font-family: 'Rockwell';
@@ -183,7 +193,7 @@ h1{
 	margin: 0;
 }
 
-.screen-splash .container p{
+.screen__splash .container p{
 	font-family: 'Raleway';
 	font-size: 30px;
 	padding: 43px 0;
@@ -192,7 +202,7 @@ h1{
 	margin: 0;
 }
 
-.screen-splash .container .shape{
+.screen__splash .container .shape{
 	display: block;
     background: url("../images/block1_shape.png") no-repeat;
     color: #fff;
@@ -234,7 +244,7 @@ h1{
 	font-size: 14px;
 	font-weight: bold;
 	background-color: #ffe13e;
-	border-left: 1px solid #fff;
+	border: 1px solid #ffe13e;
 	padding: 0 18px;
 	border-radius: 0px;
 }
@@ -244,6 +254,7 @@ h1{
 	float: right;
 	margin: 0;
 	font-family: 'Raleway';
+	line-height: 14px;
 	color: #fff;
 	font-size: 14px;
 	font-weight: bold;
@@ -259,50 +270,159 @@ h1{
 	font-size: 18px;
 	font-weight: bold;
 	background-color: #ffe13e;
-	padding: 16px 22px;
-	border: none;
+	padding: 16px 20px;
+	border-right: 1px solid #fff;
+	border-radius: 0;
 }
+
+.check-domain select{
+    border-radius: 0;
+    background: transparent;
+    height: 55px;
+    border: 0;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-appearance: none;
+    width: auto;
+   }
+
+
 
 /*end screen1*/
 
 /*start screen2*/
 
 
-.screen-services{
-	position: absolute;
-	width: 100%;
-	height: 792px;
+.screen__services{
+	position: relative;
+    margin: 0;
+    padding: 0;
 }
 
-.screen-services .container{
+.screen__services .container{
 	width: 1170px;
-	height: 657px;
-	margin: 0 auto;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
 }
 
-.screen-services .blue-block{
+.center{
+    text-align: center;
+}
+
+.screen__services .webhost_serv {
+	position: relative;
+    float: left;
+    width: 50%;
+    min-height: 650px;
+}
+
+.screen__services .domain_serv {
+	position: relative;
+    float: right;
+    width: 50%;
+    min-height: 650px;
+}
+
+.content_container{
 	position: absolute;
- 	background: #202242;
- 	top: 0;
- 	bottom: 0;
-    right: 50%;
-    left: 0;
+	display: block;
+	text-align: center;
+	height: 650px;
 }
-.screen-services .yellow-block{
-	position: absolute;
-	background: #ffe13e;
-	top: 0;
- 	bottom: 0;
-    right: 0;
-    left: 50%;
+
+.content_container .webhost{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 84px;
 }
 
 
+.screen__services .webhost_icon{
+	display: block;
+    background: url('../images/webhost_icon.png') no-repeat center;
+    width: 169px;
+    height: 169px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
 
+.title_webhost{
+	color: #fff;
+    font-size: 36px;
+}
 
+h2{
+	font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
 
+.text_webhost{
+    margin: 10px 0px 60px 0px;
+    line-height: 20px;
+    font-family: 'Raleway', serif;
+    font-size: 14px;
+    color: #fff;
+}
 
+.content_container .domain{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 84px;
+}
 
+.text-com{    
+	display: block;
+    font-size: 135px;
+    font-weight: bold;
+    color: #202242;
+    margin-bottom: 66px;
+}
+
+.title_domain{
+	color: #fff;
+    font-size: 36px;
+}
+
+.text_domain{
+	margin: 10px 0px 60px 0px;
+    line-height: 20px;
+    font-family: 'Raleway', serif;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn_serv{
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 19px 53px;
+}
+
+.bckgrnd{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    top: 0;
+    width: 50%;
+}
+
+.bgd_side_left{
+	left: 0;
+    background: #202242;
+}
+
+.bgd_side_right{
+	right: 0;
+    background: #ffe13e;
+}
 
 
 
