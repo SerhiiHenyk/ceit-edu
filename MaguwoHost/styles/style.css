@@ -479,13 +479,11 @@ h2{
 .screen {
 	position: relative;
 	height: 700px;
-	background-color: #fbf8f1;
 	z-index: 1;
 }
 
 .screen._features{
-	position: relative;
-	background: url(../images/bg_shape.png) no-repeat center;
+	background: #fbf8f1 url(../images/bg_shape.png) no-repeat center;
 }
 
 
