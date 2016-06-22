@@ -169,7 +169,7 @@ p {
 }
 
 .screen._splash{
-	background: url(../images/block1-bckgrnd.png) no-repeat;
+	background: url(../images/block1-bckgrnd.png) no-repeat center fixed;
 	background-size: cover;
     position: relative;
 }
@@ -454,12 +454,12 @@ h1{
     width: 50%;
 }
 
-.bg_color .left{
+.bg_color.left{
 	background: #202242;
     left: 0;
 }
 
-.bg_color .right{
+.bg_color.right{
 	background: #ffe13e;
     right: 0;
 }
