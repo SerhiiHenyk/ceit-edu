@@ -157,15 +157,24 @@ p {
 }
 /*end header*/
 
-/*start screen1*/
 
-.screen__splash{
+
+
+
+
+/*CHECK DOMAIN*/
+.screen{
+	position: relative;
+	width: 100%;
+}
+
+.screen._splash{
 	background: url(../images/block1-bckgrnd.png) no-repeat;
 	background-size: cover;
     position: relative;
 }
 
-.screen__splash .darken {
+.screen._splash .darken {
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
@@ -176,7 +185,7 @@ p {
 }
 
 
-.screen__splash .container {
+.screen._splash .container {
     position: relative;
     text-align: center;
     margin: 0 auto;
@@ -206,7 +215,7 @@ h1{
 	margin: 0;
 }
 
-.screen__splash .container p{
+.screen._splash .container p{
 	font-family: 'Raleway';
 	font-size: 30px;
 	padding: 43px 0;
@@ -215,7 +224,7 @@ h1{
 	margin: 0;
 }
 
-.screen__splash .container .shape{
+.screen._splash .container .shape{
 	display: block;
     background: url("../images/block1_shape.png") no-repeat;
     color: #fff;
@@ -247,7 +256,6 @@ h1{
 	font-weight: normal;
 	padding: 15px 60px 15px 15px;
 }
-
 
 
 .container .check-domain form #check_availability{
@@ -316,111 +324,93 @@ h1{
 }
 
 
-/*end screen1*/
-
-/*start screen2*/
+/*CHECK DOMAIN end*/
 
 
-.screen__services{
+
+
+
+
+
+
+
+/*SERVICES*/
+
+
+.screen._services{
+	width: 100%;
 	position: relative;
-    margin: 0;
-    padding: 0;
     height: 650px;
 }
 
-.screen__services .container{
-	width: 1170px;
-    padding: 60px 0 0 0;
-    margin: 0 auto;
-    position: relative;
+.screen._services .container{
+	position: relative;
+    height: 100%;
+    z-index: 2;
+}
+
+.row {
     z-index: 2;
     height: 650px;
+}
+
+.col-6{
+	width: 50%;
+	float: left;
+}
+
+.screen._services .content {
+	margin: 90px 80px 40px 70px;
 }
 
 .center{
     text-align: center;
 }
 
-
-
-.screen__services .webhost_serv {
-	position: relative;
-    width: 50%;
-}
-
-.screen__services .domain_serv {
-	position: relative;
-	float: right;
-    width: 50%;
-}
-
-.content_container{
-	padding: 30px;
-	position: absolute;
-	display: block;
-	text-align: center;
-}
-
-
-
-.screen__services .webhost_icon{
-	display: block;
+.screen._services .webhost_icon{
+	display: inline-block;
     background: url('../images/webhost_icon.png') no-repeat center;
     width: 169px;
     height: 169px;
-    margin: 0 auto;
-    margin-bottom: 55px;
 }
 
-.title_webhost{
-	color: #fff;
-    font-size: 36px;
-}
 
-h2{
+
+
+.screen._services h2{
 	font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    margin: 0;
     padding: 0;
-}
-
-.text_webhost{
-    margin: 10px 0px 60px 0px;
-    line-height: 20px;
-    font-family: 'Raleway', serif;
-    font-size: 14px;
-    color: #fff;
-}
-
-.content_container .domain{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 84px;
-}
-
-.text-com{    
-	display: block;
-    font-size: 135px;
-    font-weight: bold;
-    color: #202242;
-    margin-bottom: 66px;
-}
-
-.title_domain{
+    margin: 40px 0 10px 0;
 	color: #fff;
     font-size: 36px;
 }
 
-.text_domain{
-	margin: 10px 0px 60px 0px;
+
+
+.text-com{
+	display: inline-block;
+	margin: 0 0 36px 0;
+    font-size: 135px;
+    line-height: 135px;
+    font-weight: bold;
+    color: #202242;
+}
+
+
+
+.text_light{
     line-height: 20px;
     font-family: 'Raleway', serif;
     font-size: 14px;
     color: #fff;
 }
 
+
+
+
 .btn_serv{
+	margin: 30px 0;
     text-decoration: none;
     color: #fff;
     border: 3px solid #fff;
@@ -428,6 +418,7 @@ h2{
     font-weight: bold;
     padding: 19px 53px;
     cursor: pointer;
+    display: inline-block;
 }
 
 .btn_serv span {
@@ -455,35 +446,41 @@ h2{
   right: 0;
 }
 
-.bckgrnd{
-    position: absolute;
+.screen._services .bg_color {
+	position: absolute;
     z-index: 1;
     height: 100%;
     top: 0;
     width: 50%;
 }
 
-.bgd_side_left{
-	left: 0;
-    background: #202242;
+.bg_color .left{
+	background: #202242;
+    left: 0;
 }
 
-.bgd_side_right{
-	right: 0;
-    background: #ffe13e;
+.bg_color .right{
+	background: #ffe13e;
+    right: 0;
 }
 
-/*end screen2*/
 
-/*start screen3*/
-.screen {
-	position: relative;
-	height: 700px;
-	z-index: 1;
-}
+/*SERVICES end*/
+
+
+
+
+
+
+
+/*FEATURES*/
+
 
 .screen._features{
+	position: relative;
+	z-index: 1;
 	background: #fbf8f1 url(../images/bg_shape.png) no-repeat center;
+	height: 700px;
 }
 
 
@@ -492,9 +489,6 @@ h2{
     margin: 0 auto;
 }
 
-.center{
-	text-align: center;
-}
 
 .col-12{
 	margin: 0 0 90px 0; 
@@ -506,6 +500,7 @@ h2{
 	font-size: 48px;
 	line-height: 48px;
 	font-weight: bold;
+	margin: 0;
 }
 
 .description {
@@ -573,4 +568,4 @@ h2{
 	width: 60px;
 	border-bottom: 3px solid #202242;
 }
-/*end screen3*/
+/*FEATURES end*/
